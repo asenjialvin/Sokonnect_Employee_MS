@@ -37,8 +37,8 @@ The Sokonnect Employee Management System is designed to streamline the managemen
 ### Setup Instructions
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/sokonnect-employee-management.git
-    cd sokonnect-employee-management
+    git clone https://github.com/asenjialvin/Sokonnect_Employee_MS.git
+    cd Sokonnect_Employee_MS
     ```
 
 2. Install backend dependencies:
