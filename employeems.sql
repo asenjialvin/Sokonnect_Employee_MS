@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2024 at 09:35 PM
+-- Generation Time: Jun 14, 2024 at 10:09 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -47,6 +47,7 @@ INSERT INTO `admin` (`email`, `password`) VALUES
 --
 
 CREATE TABLE `employee` (
+  `id` int(254) NOT NULL,
   `name` varchar(60) NOT NULL,
   `email` varchar(60) NOT NULL,
   `password` varchar(60) NOT NULL,
@@ -60,8 +61,8 @@ CREATE TABLE `employee` (
 -- Dumping data for table `employee`
 --
 
-INSERT INTO `employee` (`name`, `email`, `password`, `address`, `salary`, `image`, `category_id`) VALUES
-('muhindi', 'samp@gmail.com', '$2b$10$RUHF.WRBIbZc0HnlCbqbOeIrfszHdadMEZSoig9KsDE3Fi4cnhUEO', '1234 ke', 2000, 'image_1718307065737.jpg', '');
+INSERT INTO `employee` (`id`, `name`, `email`, `password`, `address`, `salary`, `image`, `category_id`) VALUES
+(0, 'muhindi', 'ali@gmail.com', '$2b$10$y3l4taxWqxQFo7fhWE36uOuHdPYlwGkAffGbQwK/FSw7tc/M90SGS', '1234 ke', 3000, 'image_1718379765564.jpeg', '');
 
 --
 -- Indexes for dumped tables
@@ -77,7 +78,7 @@ ALTER TABLE `admin`
 -- Indexes for table `employee`
 --
 ALTER TABLE `employee`
-  ADD PRIMARY KEY (`email`);
+  ADD PRIMARY KEY (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
